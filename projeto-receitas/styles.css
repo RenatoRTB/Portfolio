@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
+    gap: 50px;
     top:0;
     left: 0;
     width: 100%;
@@ -26,7 +27,7 @@
     max-height: 80px;
 }
 .logo{
-    padding: 3px 0 2px 50px;
+    padding: 8px 0 2px 50px;
 }
 .menu-direita {
    display: flex; 
@@ -59,8 +60,8 @@
     gap: 20px;
 }
 .card {
-    height: 340px;
-    width: 320px;
+    max-height: 340px;
+    width: auto;
     overflow: hidden;
     background-color: white;
     border-radius: 7px;

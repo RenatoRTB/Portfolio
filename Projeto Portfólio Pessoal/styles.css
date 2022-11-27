@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: unset;
+}
+
+@media (max-width: 600px) {
+    h1 {
+    text-align: center;
+    }
+}
+
+/*Cabeçalho */
+
+header {
+    background-color:rgb(2, 46, 2);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    background-image: -webkit-linear-gradient(100deg, #fff 50%, rgb(2, 46, 2) 50%);
+    padding-bottom: 300px;
+}
+
+@media (max-width: 600px) {
+    header {
+        background-color:rgb(2, 46, 2);
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        background-image: -webkit-linear-gradient(100deg, #fff 65%, rgb(2, 46, 2) 35%);
+        padding-bottom: 300px;
+    }
+}
+
+.foto {
+    max-width: 300px;
+    height: auto; 
+    
+}
+.foto img {
+    max-width: 300px;
+    
+}
+.foto h1 {    
+    font-size: 32px;
+    color: white;
+    z-index: 1;
+    font-size: 30px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;    
+}
+.container_text {
+    background-color: white;
+    max-height: 400px;    
+    max-width: 800px;
+    display: grid;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    box-shadow: 2px 2px 2px 1px rgb(63, 62, 62);
+    padding: 25px 15px 15px 15px;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .container_text {
+        background-color:unset;        
+        max-width: 250px;
+        display: grid;
+        gap: 20px;
+        font-size: 14px;
+        font-weight: normal;
+        box-shadow: none; 
+        padding: 25px 15px 15px 15px;        
+    }
+}
+
+.container_mideas {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .container_mideas {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.icones_mideas {
+    width: 20px;
+    display: flex;
+    gap: 15px;
+    margin-right: 40px;
+}
+
+/*Corpo do projeto */
+
+nav {    
+    margin-top: -280px;
+    padding: 50px;
+}
+nav h1 {
+    padding-bottom: 10px;
+}
+.img_project img {
+    max-width: 300px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.container_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));    
+    gap: 30px; 
+}
+
+@media (max-width: 600px) {
+    .container_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+    }
+}
+
+.container_cards IMG:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: white;
+    max-width: 300px;    
+    display: grid;
+    gap: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    box-shadow: 3px 3px 6px 2px rgb(219, 219, 219);
+    overflow: hidden;
+}
+.title_project {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.title_project p {
+    font-family: 'Playfair Display', serif;
+    font-weight:550;
+    font-size: 20px;
+}
+.project_text {
+    padding: 0 20px 15px 15px;
+    text-align: justify;
+}
+.icons_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-right: 5px;
+}
+.icons_cards img {
+    max-width: 20px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: rgb(2, 46, 2);
+    color: white;
+}

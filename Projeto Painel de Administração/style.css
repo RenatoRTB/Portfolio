@@ -100,10 +100,18 @@ input {
     grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));    
     gap: 20px; 
 }
-
+.icons-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: flex-end;
+}
+.icons-cards img {
+    max-width: 20px;
+}
 .card {
     background-color: white;
-    height: 150px;
+    max-height: 150px;
     padding: 20px;
     display: grid;
     gap: 25px;
@@ -127,15 +135,6 @@ input {
     font-size: 12px;
     font-weight: normal;
     box-shadow: 3px 3px 3px 1px rgb(219, 219, 219);
-}
-.icons-cards {
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-    align-items: flex-end;
-}
-.icons-cards img {
-    max-width: 20px;
 }
 .title {
     font-weight: bold;
